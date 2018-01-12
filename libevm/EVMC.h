@@ -1,13 +1,11 @@
 #pragma once
 
 #include <evmjit.h>
+#include <hera.h>
 #include <libevm/VMFace.h>
 
 // FIXME: Move to EVM-C evm.h.
 typedef struct evm_instance* (*evm_create_fn)(void);
-
-// FIXME: Include from Here when ready there.
-extern "C" struct evm_instance* hera_create(void);
 
 namespace dev
 {
